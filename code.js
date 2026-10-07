@@ -10,7 +10,7 @@ function rechnen(test) {
     const display = document.getElementById("display");
     display.value += test;
 
-    if (test === "+") || test === "-" || test === "x" || test === ":" {
+    if (test === "+" || test === "-" || test === "x" || test === ":") {
         ersteZahl = display.value.slice(0, -1)
         operator = (test);
         display.value = "";
