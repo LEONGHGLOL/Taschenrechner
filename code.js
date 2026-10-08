@@ -39,5 +39,10 @@ function rechnen(test) {
         }
 
         display.value = ergebnis;
+
     }
+}
+
+function clearCalculator() {
+    location.reload();
 }
