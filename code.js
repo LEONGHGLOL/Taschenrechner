@@ -8,17 +8,17 @@ function rechnen(test) {
     console.log(test);
 
     const display = document.getElementById("display");
-    display.value += test;
+    if (test != "=") display.value += test;
 
     if (test === "+" || test === "-" || test === "x" || test === ":") {
-        ersteZahl = display.value.slice(0, -1)
+        ersteZahl = display.value.slice(0, -1);
         operator = (test);
-        display.value = "";
+   
 
     }
 
     if (test === "=") {
-        zweiteZahl = display.value;
+        zweiteZahl = display.value.split(operator)[1];
 
         let ergebnis;
 
